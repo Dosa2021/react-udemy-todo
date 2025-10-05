@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+}
+input {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+}
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+}
+button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: blue;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  padding: 8px 16px;
+}
+.input-area {
+  /* TODO: 変更 */
+  background-color: skyblue;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+/* TODO: 可能なら横並びにしたい */
+.input-area button {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+}
+
+/* .incomplete-area {
+    border: 2px solid aqua;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-row {
+    display: flex;
+    align-items: center;
+}
+
+.complete-area {
+    background-color: aqua;
+    border: 2px solid aqua;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+} */
