@@ -27,3 +27,5 @@ https://github.com/Dosa2021/react-udemy/pull/1
 【参考】
 ・reactバージョン変更
 https://qiita.com/tsubasa_k0814/items/d90254c807c7280c2db7
+・bootstarap
+https://qiita.com/ynunokawa/items/7c60c0db0c000d265554

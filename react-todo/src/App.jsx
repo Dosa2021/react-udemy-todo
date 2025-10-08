@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import './App.css';
 
 export const App = () => {
+  const [incompleteTodos, setIncompleteTodos] = useState(['TODOです1', 'TODOです2'])
+  const [completeTodos, setCompleteTodos] = useState(['TODOです1', 'TODOです2'])
+
   return (
     <div className="container">
       <div className="input-area">
@@ -10,39 +14,35 @@ export const App = () => {
       <div className="incomplete-area">
         <p>未完了のTODO</p>
         <ul>
-          <div className="list-row">
-            <li>
-              <p>TODOです</p>
-              <button>完了</button>
-              <button>削除</button>
-            </li>
-          </div>
-          <div className="list-row">
-            <li>
-              <p>TODOです</p>
-              <button>完了</button>
-              <button>削除</button>
-            </li>
-          </div>
+          {incompleteTodos.map((todo) => {
+            return (
+              // Note: key?
+              <li key={todo}>
+                <div className="list-row">
+                  <p className="todo-item">{todo}</p>
+                  <button>完了</button>
+                  <button>削除</button>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="iomplete-area">
         <p>完了のTODO</p>
         <ul>
-          <div className="list-row">
-            <li>
-              <p>TODOです</p>
-              <button>完了</button>
-              <button>削除</button>
-            </li>
-          </div>
-          <div className="list-row">
-            <li>
-              <p>TODOです</p>
-              <button>完了</button>
-              <button>削除</button>
-            </li>
-          </div>
+          {completeTodos.map((todo) => {
+            return (
+              // Note: key?
+              <li key={todo}>
+                <div className="list-row">
+                  <p className="todo-item">{todo}</p>
+                  <button>完了</button>
+                  <button>削除</button>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
