@@ -1,38 +1,65 @@
-.App {
+body {
+  font-family: sans-serif;
+}
+input {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+}
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+}
+button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: blue;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  padding: 8px 16px;
+}
+.input-area {
+  /* TODO: 変更 */
+  background-color: skyblue;
   text-align: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+/* TODO: 可能なら横並びにしたい */
+.input-area button {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .incomplete-area {
+    border: 2px solid aqua;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+.title {
+    font-weight: bold;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-row {
+    display: flex;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.complete-area {
+    background-color: aqua;
+    border: 2px solid aqua;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+} */
